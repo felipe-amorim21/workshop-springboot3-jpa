@@ -10,6 +10,7 @@ import com.project.course.entities.User;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
+	
 	@GetMapping
 	public ResponseEntity<User> findAll(){
 		User u = new User(1L, "Maria", "maria@gmail.com", "9999999", "123456");
